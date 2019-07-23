@@ -27,7 +27,7 @@ do
 		else # it'll match just one time
 			grep $line uniq_pmcMatrix_noRepoID.csv | awk -F ',' '{print $3}' >> countMe
 		fi
-	done < ~/data-reusability/${j}PMC.txt
+	done < ~/data_reusability/${j}PMC.txt
 
 	echo ${j} > ${j}
 	for r in MULTI NCBI_SRA EMBL DDBJ NCBI_GEO TCGA GTEx

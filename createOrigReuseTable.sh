@@ -13,4 +13,4 @@ do
 	head -1 sortedByDate | sed -e 's/$/,OG/' >> $outfile
 	sed 1d sortedByDate | sed -e 's/$/,RE/' >> $outfile	
 
-done < ~/data-reusability/uniqueRepoIDs.txt
+done < ~/data_reusability/uniqueRepoIDs.txt
