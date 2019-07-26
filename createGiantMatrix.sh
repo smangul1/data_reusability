@@ -11,7 +11,7 @@ grep -o -r -E -H -e "[SDE]R[APXRSZ][0-9]{6,7}" -e "PRJNA[0-9]{6,7}" -e "G[DSP][S
 
 # Make a column of PMC IDs
 echo "PMC_ID,repo_ID" > ~/data_reusability/pmcAndRepoIDs.txt
-awk -F "[/.:]" '{print $9","$11}' ~/data_reusability/origData.txt >> ~/data_reusability/pmcAndRepoIDs.txt
+awk -F "[/.:]" '{print $8","$10}' ~/data_reusability/origData.txt >> ~/data_reusability/pmcAndRepoIDs.txt
 
 # Make a column of repository names
 echo "repo_Name" > ~/data_reusability/repoNames.txt
@@ -44,14 +44,14 @@ done < ~/data_reusability/origData.txt
 
 echo "journal_Name" > ~/data_reusability/journalNames.txt
 
-awk -F "/" '{print $8}' ~/data_reusability/origData.txt >> ~/data_reusability/journalNames.txt
+awk -F "/" '{print $7}' ~/data_reusability/origData.txt >> ~/data_reusability/journalNames.txt
 
 cd ~/data_reusability/
 
 paste -d "," journalNames.txt pmcAndRepoIDs.txt repoNames.txt > mostOfIt.csv
 
 # Add the dates column
-sed 1d mostOfIt.csv | awk -F ',' '{print "/u/scratch/d/datduong/pubmedArticle4Dec17/journalWanted/"$1"/"$2".nxml"}' > filepaths.txt
+sed 1d mostOfIt.csv | awk -F ',' '{print "/u/scratch/n/nikodm/pubDataOpenAccXml/"$1"/"$2".nxml"}' > filepaths.txt
 
 module load python/3.7.2
 
