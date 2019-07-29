@@ -51,7 +51,7 @@ cd ~/data_reusability/
 paste -d "," journalNames.txt pmcAndRepoIDs.txt repoNames.txt > mostOfIt.csv
 
 # Add the dates column
-sed 1d mostOfIt.csv | awk -F ',' '{print "/u/scratch/n/nikodm/pubDataOpenAccXml/"$1"/"$2".nxml"}' > filepaths.txt
+sed 1d mostOfIt.csv | awk -F ',' '{print "/u/scratch/n/nikodm/pmcOA/"$1"/"$2".nxml"}' > filepaths.txt
 
 module load python/3.7.2
 
