@@ -1,19 +1,20 @@
 #!/bin/bash
 
+indir=$1
 date=$(date +"%m-%d-%Y")
 
 echo journalName > journalNames
 echo totalPapers > totPapers
 echo repoPapers > repoPapers
 
-cd /u/scratch/d/datduong/pubmedArticle4Dec17/journalWanted/
+cd $indir
 
-for i in 'Bioinformatics' 'BMC_Bioinformatics' 'BMC_Genomics' 'BMC_Syst_Biol' 'Genome_Biol' 'Genome_Med' 'Nat_Biotechnol' 'Nat_Methods' 'Nucleic_Acids_Res' 'PLoS_Comput_Biol'
+while read journal
 do
-	echo $i >> ~/data_reusability/journalNames
-	ls $i/*.nxml | wc -l >> ~/data_reusability/totPapers
-	grep -E "^${i}" ~/data_reusability/uniq_pmcMatrix_noRepoName.csv | wc -l >> ~/data_reusability/repoPapers
-done
+	echo ${journal} >> ~/data_reusability/journalNames
+	ls ${journal}/*.nxml | wc -l >> ~/data_reusability/totPapers
+	grep -E "^${journal}," ~/data_reusability/uniq_pmcMatrix_noRepoName.csv | wc -l >> ~/data_reusability/repoPapers
+done < ~/data_reusability/allJournalNames.txt
 
 cd ~/data_reusability/
 

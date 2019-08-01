@@ -53,6 +53,7 @@ paste -d "," journalNames.txt pmcAndRepoIDs.txt repoNames.txt > mostOfIt.csv
 # Add the dates column
 sed 1d mostOfIt.csv | awk -F ',' '{print "/u/scratch/n/nikodm/pmcOA/"$1"/"$2".nxml"}' > filepaths.txt
 
+. /u/local/Modules/default/init/modules.sh
 module load python/3.7.2
 
 echo date > ~/data_reusability/dates.txt

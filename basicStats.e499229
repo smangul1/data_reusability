@@ -1,0 +1,6 @@
+/work/UGE/8.6.4/n2238/job_scripts/499229: line 37: allJournalNames.txt: No such file or directory
+cat: allJournalNames.txt: No such file or directory
+mkdir: cannot create directory `stats_dump_08-01-2019': File exists
+mv: cannot stat `allJournalNames.txt': No such file or directory
+mv: cannot stat `thisJournal.txt': No such file or directory
+mv: cannot stat `countMe': No such file or directory

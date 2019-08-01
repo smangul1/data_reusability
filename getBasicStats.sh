@@ -4,20 +4,21 @@ date=$(date +"%m-%d-%Y")
 
 outfile=$1
 
-echo x > repos.txt
+# set up files to dump counts in
 for r in MULTI NCBI_SRA EMBL DDBJ NCBI_GEO TCGA GTEx
 do
-	echo $r >> repos.txt
+	echo $r > $r
 done
 
 ###
-# for each journal:
+# for each journal, count the number of papers mentioning each repository
 ###
 
-for j in Bioinformatics BMC_Bioinformatics BMC_Genomics BMC_Syst_Biol Genome_Biol Genome_Med Nat_Biotechnol Nat_Methods Nucleic_Acids_Res PLoS_Comput_Biol
+while read j
 do
-	grep -E "^${j}" uniq_pmcMatrix_noRepoName.csv | awk -F ',' '{print $2}' > ${j}PMC.txt
-
+	# extract all the papers in this journal
+	grep -E "^${j}," uniq_pmcMatrix_noRepoName.csv | awk -F ',' '{print $2}' > thisJournal.txt
+	# check how many hits come up for each paper in the list of only papers and repo names
 	echo count_of_repos > countMe
 	while read line
 	do
@@ -27,17 +28,19 @@ do
 		else # it'll match just one time
 			grep $line uniq_pmcMatrix_noRepoID.csv | awk -F ',' '{print $3}' >> countMe
 		fi
-	done < ~/data_reusability/${j}PMC.txt
-
-	echo ${j} > ${j}
+	done < ~/data_reusability/thisJournal.txt
+	# drop the count numbers in their respective files
 	for r in MULTI NCBI_SRA EMBL DDBJ NCBI_GEO TCGA GTEx
 	do
-		grep $r countMe | wc -l >> ${j}
+		grep $r countMe | wc -l >> ${r}
 	done
-done
+done < allJournalNames.txt
 ###
 
-paste repos.txt Bioinformatics BMC_Bioinformatics BMC_Genomics BMC_Syst_Biol Genome_Biol Genome_Med Nat_Biotechnol Nat_Methods Nucleic_Acids_Res PLoS_Comput_Biol -d ',' > $outfile
+echo journalName > journalNames
+cat allJournalNames.txt >> journalNames
+paste -d ',' journalNames MULTI NCBI_SRA EMBL DDBJ NCBI_GEO TCGA GTEx > $outfile
 
 mkdir stats_dump_$date
-mv repos.txt Bioinformatics* BMC_Bioinformatics* BMC_Genomics* BMC_Syst_Biol* Genome_Biol* Genome_Med* Nat_Biotechnol* Nat_Methods* Nucleic_Acids_Res* PLoS_Comput_Biol* stats_dump_$date 
+
+mv allJournalNames.txt journalNames MULTI NCBI_SRA EMBL DDBJ NCBI_GEO TCGA GTEx thisJournal.txt countMe stats_dump_$date
