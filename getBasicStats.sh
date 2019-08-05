@@ -43,4 +43,4 @@ paste -d ',' journalNames MULTI NCBI_SRA EMBL DDBJ NCBI_GEO TCGA GTEx > $outfile
 
 mkdir stats_dump_$date
 
-mv allJournalNames.txt journalNames MULTI NCBI_SRA EMBL DDBJ NCBI_GEO TCGA GTEx thisJournal.txt countMe stats_dump_$date
+mv journalNames MULTI NCBI_SRA EMBL DDBJ NCBI_GEO TCGA GTEx thisJournal.txt countMe stats_dump_$date

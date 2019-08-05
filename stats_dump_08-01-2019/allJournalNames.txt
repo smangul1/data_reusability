@@ -1707,6 +1707,7 @@ J_Orthop_Sci
 J_Orthop_Surg
 J_Orthop_Surg_Res
 J_Orthop_Translat
+journal_Name
 J_Ovarian_Res
 J_Pain_Res
 J_Parasitol_Res

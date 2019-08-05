@@ -7,11 +7,11 @@ echo journalName > journals
 echo orig > OG
 echo reuse > RE
 
-for j in Bioinformatics BMC_Bioinformatics BMC_Genomics BMC_Syst_Biol Genome_Biol Genome_Med Nat_Biotechnol Nat_Methods Nucleic_Acids_Res PLoS_Comput_Biol
+while read j
 do
 	echo $j >> journals
-	grep -E "^${j}" $infile | grep ,OG | wc -l >> OG
-	grep -E "^${j}" $infile | grep ,RE | wc -l >> RE
-done
+	grep -E "^${j}," $infile | grep ,OG | wc -l >> OG
+	grep -E "^${j}," $infile | grep ,RE | wc -l >> RE
+done < OGjournalNames.txt
 
 paste -d ',' journals OG RE > $outfile
