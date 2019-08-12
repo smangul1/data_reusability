@@ -12,9 +12,9 @@ cd $indir
 while read journal
 do
 	echo ${journal} >> ~/data_reusability/journalNames
-	ls ${journal}/*.nxml | wc -l >> ~/data_reusability/totPapers
+	ls ${journal} | wc -l >> ~/data_reusability/totPapers
 	grep -E "^${journal}," ~/data_reusability/uniq_pmcMatrix_noRepoName.csv | wc -l >> ~/data_reusability/repoPapers
-done < ~/data_reusability/allJournalNames.txt
+done < ~/data_reusability/repoJournalNames.txt
 
 cd ~/data_reusability/
 

@@ -311,7 +311,6 @@ Allergol_Select
 Allergy
 Allergy_Asthma_Clin_Immunol
 Allergy_Asthma_Immunol_Res
-Allergy_Asthma_Proc
 Allergy_Rhinol__Providence_
 Alp_Bot
 Alternatives__Boulder_
@@ -1710,7 +1709,6 @@ Clin_Appl_Thromb_Hemost
 Clin_Arch_Commun_Disord
 Clin_Auton_Res
 Clin_Biochem
-Clin_Biomech__Bristol,_Avon_
 Clin_Breast_Cancer
 Clin_Cancer_Drugs
 Clin_Cancer_Res
@@ -3651,12 +3649,12 @@ Hypertens_Pregnancy
 Hypertens_Res
 Hypoxia__Auckl_
 Ibis__Lond_1859_
-Ibis_(Lond_1859)
+Ibis__Lond_1859_
 IBRO_Rep
 Icarus
 ICES_J_Mar_Sci
 IDCases
-Identity__Mahwah,_N_J_
+Identity__Mahwah__N_J_
 IEEE_J_Sel_Top_Quantum_Electron
 IEEE_J_Transl_Eng_Health_Med
 IEEE_Photonics_J
@@ -4689,7 +4687,7 @@ J_Biol_Inorg_Chem
 J_Biol_Med_Sci
 J_Biol_Phys
 J_Biol_Res__Thessalon_
-J_Biol_Res_(Thessalon)
+J_Biol_Res__Thessalon_
 J_Biol_Rhythms
 J_Biol_Syst
 J_Biomark
@@ -4862,7 +4860,7 @@ J_Circadian_Rhythms
 J_Circ_Biomark
 J_Clean_Prod
 J_Clin_Anat_Pathol__JCAP_
-J_Clin_Anat_Pathol_(JCAP)
+J_Clin_Anat_Pathol__JCAP_
 J_Clin_Anesth
 J_Clin_Anesth_Pain_Manag
 J_Clin_Apher
@@ -4884,7 +4882,7 @@ J_Clin_Exp_Ophthalmol
 J_Clin_Exp_Pathol
 J_Clin_Gastroenterol
 J_Clin_Hypertens__Greenwich_
-J_Clin_Hypertens_(Greenwich)
+J_Clin_Hypertens__Greenwich_
 J_Clin_Imaging_Sci
 J_Clin_Immunol
 J_Clin_Invest
@@ -4934,7 +4932,7 @@ J_Cogn_Dev
 J_Cogn_Eng_Decis_Mak
 J_Cogn_Neurosci
 J_Cogn_Psychol__Hove_
-J_Cogn_Psychol_(Hove)
+J_Cogn_Psychol__Hove_
 J_College_Stud_Psychother
 J_Colloid_Interface_Sci
 J_Comb_Chem
@@ -5031,9 +5029,9 @@ J_Dent_Res_Dent_Clin_Dent_Prospect
 J_Dent_Res_Dent_Clin_Dent_Prospects
 J_Dent_Sci
 J_Dent__Shiraz_
-J_Dent_(Shiraz)
+J_Dent__Shiraz_
 J_Dent__Tehran_
-J_Dent_(Tehran)
+J_Dent__Tehran_
 J_Depress_Anxiety
 J_Dermatol
 J_Dermatol_Nurses_Assoc
@@ -5137,7 +5135,7 @@ J_Environ_Health_Sci_Eng
 J_Environ_Manage
 J_Environ_Monit
 J_Environ_Occup_Sci
-J_Environ_Prot__Irvine,_Calif_
+J_Environ_Prot__Irvine__Calif_
 J_Environ_Psychol
 J_Environ_Public_Health
 J_Environ_Radioact
@@ -5275,7 +5273,7 @@ J_Gen_Intern_Med
 J_Genomics
 J_Gen_Physiol
 J_Gen_Pract__Los_Angel_
-J_Gen_Pract_(Los_Angel)
+J_Gen_Pract__Los_Angel_
 J_Gen_Virol
 J_Geochem_Explor
 J_Geod
@@ -5502,7 +5500,7 @@ J_Law_Soc
 J_Learn_Disabil
 J_Legal_Hist
 J_Leuk__Los_Angel_
-J_Leuk_(Los_Angel)
+J_Leuk__Los_Angel_
 J_Leukoc_Biol
 J_Lifestyle_Med
 J_Lipid_Res
@@ -5674,7 +5672,7 @@ J_Mucosal_Immunol_Res
 J_Multidiscip_Healthc
 J_Multivar_Anal
 J_Mult_Scler__Foster_City_
-J_Mult_Scler_(Foster_City)
+J_Mult_Scler__Foster_City_
 J_Muscle_Res_Cell_Motil
 J_Musculoskelet_Disord_Treat
 J_Musculoskelet_Neuronal_Interact
@@ -6048,7 +6046,7 @@ J_Public_Health_Africa
 J_Public_Health_Dent
 J_Public_Health_Manag_Pract
 J_Public_Health__Oxf_
-J_Public_Health_(Oxf)
+J_Public_Health__Oxf_
 J_Public_Health_Policy
 J_Public_Health_Res
 J_Public_Health_Sanit_Rev
@@ -6149,7 +6147,7 @@ J_Soc_Distress_Homeless
 J_Soc_Inf_Disp
 J_Socio_Econ
 J_Sociol__Melb_
-J_Sociol_(Melb)
+J_Sociol__Melb_
 J_Soc_Issues
 J_Soc_Pers_Relat
 J_Soc_Philos
@@ -6162,7 +6160,7 @@ J_Soc_Work__Lond_
 J_Soc_Work_Pract
 J_Soc_Work_Pract_Addict
 J_Softw__Malden_
-J_Softw_(Malden)
+J_Softw__Malden_
 J_Soils_Sediments
 J_Solgel_Sci_Technol
 J_Solid_State_Chem
@@ -6411,7 +6409,7 @@ Lancet_Psychiatry
 Lancet_Public_Health
 Lancet_Respir_Med
 Land__Basel_
-Land_(Basel)
+Land__Basel_
 Land_Degrad_Dev
 Landsc_Ecol
 Landsc_Hist
@@ -6456,7 +6454,7 @@ Learn_Mem
 Learn_Motiv
 Lebenson_Wiss_Technol
 Leg_Stud__Soc_Leg_Scholars_
-Leg_Stud_(Soc_Leg_Scholars)
+Leg_Stud__Soc_Leg_Scholars_
 Lethaia
 Lett_Appl_Microbiol
 Lett_Drug_Des_Discov
@@ -6471,7 +6469,7 @@ LGBT_Health
 Libyan_J_Med
 Lichenologist
 Life__Basel_
-Life_(Basel)
+Life__Basel_
 Life_Sci
 Life_Sci_Alliance
 Life_Sci_Soc_Policy
@@ -6560,7 +6558,7 @@ Mar
 Mar_Biodivers
 Mar_Biol
 Mar_Biotechnol__NY_
-Mar_Biotechnol_(NY)
+Mar_Biotechnol__NY_
 Mar_Chem
 Mar_Drugs
 Mar_Ecol_Prog_Ser
@@ -6580,7 +6578,7 @@ Mater_Charact
 Mater_Des
 Mater_Horiz
 Materials__Basel_
-Materials_(Basel)
+Materials__Basel_
 Mater_Lett
 Matern_Child_Health_J
 Matern_Child_Nutr
@@ -6637,7 +6635,7 @@ Med_Care_Res_Rev
 Med_Chem
 Medchemcomm
 Med_Chem__Los_Angeles_
-Med_Chem_(Los_Angeles)
+Med_Chem__Los_Angeles_
 Med_Chem_Res
 Med_Chir_J
 Med_Chir_J_Rev
@@ -6671,7 +6669,7 @@ Mediev_Archaeol
 Med_Image_Anal
 Med_Immunol
 Med_Instrum__Luton_
-Med_Instrum_(Luton)
+Med_Instrum__Luton_
 Mediterr_J_Hematol_Infect_Dis
 Med_J_Aust
 Med_J_Islam_Repub_Iran
@@ -6696,7 +6694,7 @@ Med_Q_Rev
 Med_Res_Rev
 Med_Sci_Anal_Ser
 Med_Sci__Basel_
-Med_Sci_(Basel)
+Med_Sci__Basel_
 Med_Sci_Educ
 Med_Sci_Law
 Med_Sci_Monit
@@ -6708,7 +6706,7 @@ Med_Vet_Entomol
 Melanoma_Manag
 Melanoma_Res
 Membranes__Basel_
-Membranes_(Basel)
+Membranes__Basel_
 Mem_Cognit
 Mem_Inst_Oswaldo_Cruz
 Memo
@@ -6731,7 +6729,7 @@ Metabolism
 Metabolites
 Metabolomics
 Metabolomics__Los_Angel_
-Metabolomics_(Los_Angel)
+Metabolomics__Los_Angel_
 Metab_Syndr_Relat_Disord
 Metacogn_Learn
 Meta_Gene
@@ -6752,7 +6750,7 @@ MethodsX
 Metroeconomica
 Metrologia
 Microarrays__Basel_
-Microarrays_(Basel)
+Microarrays__Basel_
 Microb_Biotechnol
 Microb_Cell
 Microb_Cell_Fact
@@ -6779,7 +6777,7 @@ Microelectron_Reliab
 Microfluid_Nanofluidics
 Microgravity_Sci_Technol
 Micromachines__Basel_
-Micromachines_(Basel)
+Micromachines__Basel_
 Micron
 Microorganisms
 Microporous_Mesoporous_Mater
@@ -6787,7 +6785,7 @@ Microprocess_Microsyst
 Microrna
 Microsc_Microanal
 Microscopy__Oxf_
-Microscopy_(Oxf)
+Microscopy__Oxf_
 Microsc_Res_Tech
 Microsurgery
 Microsyst_Nanoeng
@@ -7024,7 +7022,7 @@ Nat_Rev_Clin_Oncol
 Nat_Rev_Endocrinol
 Nat_Rev_Gastroenterol_Hepatol
 Nat_Sci__Irvine_
-Nat_Sci_(Irvine)
+Nat_Sci__Irvine_
 Nat_Sci_Sleep
 Nat_Struct_Mol_Biol
 Nat_Sustain
