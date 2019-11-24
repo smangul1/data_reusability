@@ -1,0 +1,7 @@
+
+The 'gcc/4.9.3' module is being loaded
+
+	These modules were already loaded: ATS intel/13.cs
+
+	Unloading the conflicting module 'intel/13.cs'
+
