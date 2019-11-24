@@ -4,7 +4,11 @@ import sys
 filename=sys.argv[1]
 
 def extractAuthors(paperName):
-	root=ET.parse(paperName).getroot()
+	try:
+		root=ET.parse(paperName).getroot()
+	except:
+		print("cannot open",paperName,", skipping..")
+		return
 	print(paperName)
 	for i in root.findall("./front/article-meta/contrib-group/contrib/name/"):
 		print(i.tag, i.text)
