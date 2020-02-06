@@ -7,7 +7,8 @@ outfile=$2
 module load python/3.7.2
 
 
-echo 'authors' > $outfile
+#echo 'Journal,PMC_ID,Lastname,Firstname,Address' > $outfile
+echo 'Journal,PMC_ID,Lastname,Firstname' > $outfile
 
 # DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )" # get script directory
 # python3 $DIR/extractAuthors.py $infile >> $outfile

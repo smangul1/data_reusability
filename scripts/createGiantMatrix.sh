@@ -7,7 +7,7 @@ date=$(date +"%m-%d-%Y")
 cd $indir
 
 # Extract all the papers we care about from journalWanted
-grep -o -r -E -H -e "[SDE]R[APXRSZ][0-9]{6,7}" -e "PRJNA[0-9]{6,7}" -e "G[DSP][SEL][0-9]{1,6}" -e "TCGA" -e "GTEx" $indir > ~/data_reusability/origData.txt
+grep -o -r -E -H -e "[SDE]R[APXRSZ][0-9]{6,7}" -e "PRJNA[0-9]{6,7}" -e "PRJD[0-9]{6,7}" -e "PRJEB[0-9]{6,7}" -e "GDS[0-9]{1,6}" -e "GSE[0-9]{1,6}" -e "GPL[0-9]{1,6}" -e "GSM[0-9]{1,6}" -e "TCGA" -e "GTEx" $indir > ~/data_reusability/origData.txt
 
 # Make a column of PMC IDs
 echo "PMC_ID,repo_ID" > ~/data_reusability/pmcAndRepoIDs.txt
@@ -17,7 +17,7 @@ awk -F "[/.:]" '{print $8","$10}' ~/data_reusability/origData.txt >> ~/data_reus
 echo "repo_Name" > ~/data_reusability/repoNames.txt
 
 while read line; do
-	if [[ ! -z "$(echo $line | grep -o -E -e 'SR[APXRSZ]' -e 'PRJNA')" ]]
+	if [[ ! -z "$(echo $line | grep -o -E -e 'SR[APXRSZ]' -e 'PRJNA' -e 'PRJD' -e 'PRJEB')" ]]
 	then
 		echo "NCBI_SRA" >> ~/data_reusability/repoNames.txt
 	elif [[ ! -z "$(echo $line | grep -o -E 'ER[APXRSZ]')" ]]
@@ -26,7 +26,7 @@ while read line; do
 	elif [[ ! -z "$(echo $line | grep -o -E 'DR[APXRSZ]')" ]]
 	then	
 		echo "DDBJ" >> ~/data_reusability/repoNames.txt	
-	elif [[ ! -z "$(echo $line | grep -o -E 'G[DSP][SEL][0-9]{1,6}')" ]]
+	elif [[ ! -z "$(echo $line | grep -o -E 'GDS' -e 'GSE[0-9]{1,6}' -e 'GPL[0-9]{1,6}' -e 'GSM[0-9]{1,6}')" ]]
 	then
 		echo "NCBI_GEO" >> ~/data_reusability/repoNames.txt
 	elif [[ ! -z "$(echo $line | grep -o 'TCGA')" ]]
