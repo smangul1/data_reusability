@@ -3,8 +3,8 @@
 infile=$1
 outfile=$2
 
-. /u/local/Modules/default/init/modules.sh
-module load python/3.7.2
+#. /u/local/Modules/default/init/modules.sh
+#module load python/3.7.2
 
 echo 'date' > $outfile
-python3 ./extractDate.py $infile >> $outfile
+python ./extractDate.py $infile >> $outfile
