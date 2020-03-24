@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "./extractDate.py", line 37, in <module>
+    print(p + ',' + extractFirstDate(i))
+  File "./extractDate.py", line 28, in extractFirstDate
+    dy = days[0]
+IndexError: list index out of range
