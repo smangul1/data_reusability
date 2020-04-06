@@ -7,30 +7,27 @@ def extractFirstDate(paperName):
 	try:
 		root=ET.parse(paperName).getroot()
 	except:
-		return "missing_file:" + paperName	
-	years=[]
-	mons=[]
-	days=[]
-	for y in root.findall("./front/article-meta/pub-date/year"):
-		years.append(y.text)
-	for m in root.findall("./front/article-meta/pub-date/month"):
-		mons.append(m.text)
-	for d in root.findall("./front/article-meta/pub-date/day"):
-		days.append(d.text)
-	if len(years) == 0:
+		return "missing_file:" + paperName
+	dates = []	
+	for date in root.findall('./front/article-meta/pub-date/'):
+		try: 
+			y = date.findall('./year')[0].text
+		except:
+			y = 'NaN'
+		try:
+			m = date.findall('./month')[0].text
+		except:
+			m = '01'
+		try:
+			d = date.findall('./day')[0].text
+		except:
+			d = '01'
+		if y != 'NaN':
+			dates.append(y + '-' + m + '-' + d)
+	if len(dates) == 0:
 		return 'NaN'
 	else:
-		yr = years[0]
-	if len(mons) == 0:
-		mn = '01'
-	else:
-		mn = mons[0]
-	if len(days) == 0:
-		dy = '01'
-	else:
-		dy = days[0]
-	date = yr + '-' + mn + '-' + dy
-	return date
+		return dates[0]
 
 file=open(filename)
 list=[line[:-1] for line in file]
