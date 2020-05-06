@@ -1,8 +1,0 @@
-
-The 'gcc/4.9.3' module is being loaded
-
-	These modules were already loaded: ATS intel/13.cs
-
-	Unloading the conflicting module 'intel/13.cs'
-
-python3: can't open file '/work/UGE/8.6.4/n6459/job_scripts/extractAuthors.py': [Errno 2] No such file or directory
