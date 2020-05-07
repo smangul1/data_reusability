@@ -1,5 +1,6 @@
 #!/bin/bash
 #$ -cwd
+#$ -j y
 #$ -l h_data=48G,h_rt=24:00:00
 #$ -o download_publications.sh.log
 

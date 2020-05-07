@@ -1,9 +1,10 @@
 #!/bin/bash
 #$ -cwd
+#$ -j y
 #$ -l h_data=48G,h_rt=24:00:00
 #$ -o preFilterPMCscrape.sh.log
 
-indir="/u/scratch/n/nikodm/pmcOA_2020-05-05/"
+indir="/u/scratch/n/nikodm/pmcOA_05-05-2020/"
 outfile="../data_tables/preFilterMatrix.csv"
 
 # extract papers that contain SRA or GEO accession numbers from input folder
@@ -16,16 +17,16 @@ grep -o -r -E -H \
 -e "GSE[0-9]{1,6}" \
 -e "GPL[0-9]{1,6}" \
 -e "GSM[0-9]{1,6}" \
-$indir > rawPubData.txt
+$indir > ../data_lists/rawPubData.txt
 
 # reformat the raw scraped data into a csv
-echo "pmc_ID,accession" > pmcAndAccs.csv
-awk -F "[/.:]" '{print $8","$10}' rawPubData.txt >> pmcAndAccs.csv
+echo "pmc_ID,accession" > ../data_lists/pmcAndAccs.csv
+awk -F "[/.:]" '{print $8","$10}' ../data_lists/rawPubData.txt >> ../data_lists/pmcAndAccs.csv
 
 # make a column of journal names
-echo "journal" > journalNames.txt
-awk -F "/" '{print $7}' rawPubData.txt >> journalNames.txt
+echo "journal" > ../data_lists/journalNames.txt
+awk -F "/" '{print $7}' ../data_lists/rawPubData.txt >> ../data_lists/journalNames.txt
 
-paste -d ',' journalNames.txt pmcAndAccs.csv > $outfile
+paste -d ',' ../data_lists/journalNames.txt ../data_lists/pmcAndAccs.csv > $outfile
 
 
