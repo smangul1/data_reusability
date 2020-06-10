@@ -1,6 +1,6 @@
 # Data Reusability Pipeline
 
-Analysis pipeline for the paper *Secondary analysis of publicly available omics data across 2.8 million publications,* produced by the Mangul Lab at USC.
+Analysis pipeline for the paper *A comprehensive analysis of the reusability of public omics data across 2.8 million research publications,* produced by the Mangul Lab at USC.
 
 Authors: Nicholas Darci-Maher, Kerui Peng, Dat Duong, Richard J. Abdill, Eleazar Eskin, Serghei Mangul
 
