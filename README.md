@@ -38,6 +38,8 @@ cd scripts
 cd ../
 ```
 
+## Create a master table containing all the data
+
 ### Launch jupyter notebook
 
 Requires installation: https://jupyter.org/install
@@ -46,8 +48,6 @@ Requires installation: https://jupyter.org/install
 cd jupyter_notebooks
 jupyter notebook
 ```
-
-## Create a master table containing all the data
 
 Merge data scraped from the PMC publications onto reference data from SRA and GEO.
 
