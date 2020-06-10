@@ -8,7 +8,7 @@ Authors: Nicholas Darci-Maher, Kerui Peng, Dat Duong, Richard J. Abdill, Eleazar
 
 Download the most recent open access subset of PubMed Central (PMC) publications. Then, rename journals with commas in their names to avoid issues downstream.
 
-Note: this data is large. Create a directory outside this repository to store the data, and point each script to that directory when appropriate.
+Note: this data is large. Create a directory outside this repository to store the data, and point each script to that directory where appropriate.
 
 ```bash
 cd scripts
@@ -51,12 +51,12 @@ jupyter notebook
 
 Merge data scraped from the PMC publications onto reference data from SRA and GEO.
 
-Run jupyter_notebooks/create_metadata_table.ipynb
-Run jupyter_notebooks/create_impactFactor_table.ipynb
-Run jupyter_notebooks/analyze_metadata_table.ipynb
+* Run jupyter_notebooks/create_metadata_table.ipynb
+* Run jupyter_notebooks/create_impactFactor_table.ipynb
+* Run jupyter_notebooks/analyze_metadata_table.ipynb
 
 ## Create figures
 
 Use everything generated so far to visualize findings.
 
-Run jupyter_notebooks/vizualize_data.ipynb
+* Run jupyter_notebooks/vizualize_data.ipynb
