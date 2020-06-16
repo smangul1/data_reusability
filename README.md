@@ -6,7 +6,9 @@ Authors: Nicholas Darci-Maher, Kerui Peng, Dat Duong, Richard J. Abdill, Eleazar
 
 ## Download data
 
-Download the most recent open access subset of PubMed Central (PMC) publications. Then, rename journals with commas in their names to avoid issues downstream.
+Download the most recent open access subset of PubMed Central (PMC) publications.
+Rename journals with commas in their names to avoid issues downstream.
+Download metadata reference tables for every public SRA and GEO dataset.
 
 Note: this data is large. Create a directory outside this repository to store the data, and point each script to that directory where appropriate.
 
@@ -14,6 +16,7 @@ Note: this data is large. Create a directory outside this repository to store th
 cd scripts
 ./download_publications.sh
 ./rename_CommaJournals.sh
+./download_refs.py
 cd ../
 ```
 
