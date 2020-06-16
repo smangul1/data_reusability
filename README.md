@@ -1,6 +1,8 @@
 # Data Reusability Pipeline
 
-Description of the data analysis pipeline for the paper "Secondary analysis of publicly available omics data across 2.8 million publications," produced by the Mangul Lab at USC.
+Analysis pipeline for the paper *A comprehensive analysis of the reusability of public omics data across 2.8 million research publications,* produced by the Mangul Lab at USC.
+
+This analysis includes publications that interact with one or both of two online resources hosted by the National Center for Biotechnology Information (NCBI): the Sequence Read Archive (SRA) and the Gene Expression Omnibus (GEO).
 
 Authors: Nicholas Darci-Maher, Kerui Peng, Dat Duong, Richard J. Abdill, Eleazar Eskin, Serghei Mangul
 
