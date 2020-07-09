@@ -8,9 +8,7 @@ Authors: Nicholas Darci-Maher, Kerui Peng, Dat Duong, Richard J. Abdill, Eleazar
 
 ## Download data
 
-Download the most recent open access subset of PubMed Central (PMC) publications.
-Rename journals with commas in their names to avoid issues downstream.
-Download metadata reference tables for every public SRA and GEO dataset.
+Download the most recent open access subset of PubMed Central (PMC) publications. Rename journals with commas in their names to avoid issues downstream.Download metadata reference tables for every public SRA and GEO dataset.
 
 Note: this data is large. Create a directory outside this repository to store the data, and point each script to that directory where appropriate.
 
